@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup Form</title>
+  <script defer src="signup.js"></script> <!-- Link the JavaScript file -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="flex items-center justify-center min-h-screen bg-gray-100">
+  <div class="w-full max-w-sm p-8 bg-white shadow-lg rounded-lg">
+    <h2 class="text-2xl font-bold mb-6 text-center text-gray-700">Sign Up</h2>
+
+    <!-- Signup Form -->
+    <form id="signupForm" class="space-y-4">
+      <!-- Username -->
+      <div>
+        <label for="username" class="block text-sm font-medium text-gray-700">Username</label>
+        <input type="text" id="username" name="username" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-600" placeholder="Enter your username" required>
+      </div>
+
+      <!-- Gmail -->
+      <div>
+        <label for="email" class="block text-sm font-medium text-gray-700">Gmail</label>
+        <input type="email" id="email" name="email" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-600" placeholder="you@gmail.com" required>
+      </div>
+
+      <!-- Password -->
+      <div>
+        <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+        <input type="password" id="password" name="password" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-600" placeholder="Enter your password" required>
+      </div>
+
+      <!-- Submit Button -->
+      <div>
+        <button type="submit" class="w-full py-2 px-4 bg-indigo-600 text-white font-bold rounded-md hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-600">
+          Sign Up
+        </button>
+      </div>
+    </form>
+
+    <!-- Success message (hidden initially) -->
+    <div id="successMessage" class="mt-4 p-2 bg-green-100 text-green-700 border border-green-400 rounded-md hidden">
+      Sign up successful!
+    </div>
+  </div>
+</body>
+</html>
